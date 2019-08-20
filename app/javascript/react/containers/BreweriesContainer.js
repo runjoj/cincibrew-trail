@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import UserTile from '../components/UserTile'
-import SearchBar from '../components/SearchBar'
+import BreweryTile from '../components/BreweryTile'
 
-class UsersContainer extends React.Component {
+class BreweriesContainer extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -40,6 +39,8 @@ class UsersContainer extends React.Component {
       return(
         <UserTile
           key={brewery.id}
+          id={brewery.id}
+          name={brewery.name}
           image={brewery.image}
         />
       )

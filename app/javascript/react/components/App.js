@@ -1,7 +1,13 @@
 import React from 'react'
+import { BrowserRouter, Route, Router } from 'react-router-dom'
+import BreweriesContainer from '../containers/BreweriesContainer'
 
-export const App = (props) => {
-  return (<h1>Make It So React</h1>)
+const App = (props) => {
+  return (
+    <BrowserRouter>
+      <Route exact path="/breweries" component={BreweriesContainer} />
+    </BrowserRouter>
+  )
 }
 
 export default App

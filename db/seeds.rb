@@ -1,7 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+brewery1logo = File.open(File.join(Rails.root, '/public/images/madtree.jpeg'))
+brewery2logo = File.open(File.join(Rails.root, '/public/images/rhinegeist.jpeg'))
+
+brewery1 = Brewery.create!(name:"MadTree Brewing", address: "3301 Madison Rd", city: "Cincinnati", state: "OH", phone: "513-836-8733", image: brewery1logo, website: "www.madtreebrewing.com")
+brewery2 = Brewery.create!(name:"Rhinegeist Brewing", address: "27 W 7th St", city: "Covington", state: "KY", phone: "859-261-5600", image: brewery2logo, website: "www.rhinegeist.com")

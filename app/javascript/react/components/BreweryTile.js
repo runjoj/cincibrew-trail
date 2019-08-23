@@ -6,14 +6,12 @@ const BreweryTile = props => {
 
   return(
       <div>
-        <Link to={`/breweries/${props.id}`}>
-          <div className="brewery-logo">
-            <img src={props.image} alt="brewery logo" width="250" height="250"/>
-            <div className="brewery-name">
-              <p>{props.name}</p>
-            </div>
+        <div className="brewery-logo">
+          <img src={props.logo.url} alt="brewery logo" width="200" height="200"/>
+          <div className="brewery-name">
+            <p>{props.name}</p>
           </div>
-        </Link>
+        </div>
       </div>
   )
 }

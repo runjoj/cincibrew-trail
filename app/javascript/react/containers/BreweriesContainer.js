@@ -36,12 +36,13 @@ class BreweriesContainer extends React.Component {
 
   render() {
     let breweries = this.state.breweries.map(brewery => {
+      debugger
       return(
-        <UserTile
+        <BreweryTile
           key={brewery.id}
           id={brewery.id}
           name={brewery.name}
-          image={brewery.image}
+          logo={brewery.logo}
         />
       )
     })

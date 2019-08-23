@@ -1,11 +1,15 @@
 import React from 'react'
-import { BrowserRouter, Route, Router } from 'react-router-dom'
+import { BrowserRouter, Route, Router, Switch } from 'react-router-dom'
 import BreweriesContainer from '../containers/BreweriesContainer'
+import ShowBreweryContainer from '../containers/ShowBreweryContainer'
 
 const App = (props) => {
   return (
     <BrowserRouter>
-      <Route exact path="/breweries" component={BreweriesContainer} />
+      <Switch>
+        <Route exact path="/breweries" component={BreweriesContainer} />
+        <Route exact path="/breweries/:id" component={ShowBreweryContainer} />
+      </Switch>
     </BrowserRouter>
   )
 }

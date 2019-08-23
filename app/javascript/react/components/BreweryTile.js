@@ -7,7 +7,7 @@ const BreweryTile = props => {
   return(
       <div>
         <div className="brewery-logo">
-          <img src={props.logo.url} alt="brewery logo"/>
+          <img src={props.logo.url} alt="brewery logo" width="200" height="200"/>
           <div className="brewery-name">
             <p>{props.name}</p>
           </div>

@@ -42,7 +42,7 @@ class BreweriesContainer extends React.Component {
           key={brewery.id}
           id={brewery.id}
           name={brewery.name}
-          image={brewery.image}
+          logo={brewery.logo}
         />
       )
     })

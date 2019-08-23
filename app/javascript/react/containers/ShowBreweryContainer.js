@@ -31,14 +31,7 @@ class ShowBreweryContainer extends React.Component {
       <div>
         <ShowBreweryTile
           key={this.state.brewery.id}
-          id={this.state.brewery.id}
-          name={this.state.brewery.name}
-          address={this.state.brewery.address}
-          city={this.state.brewery.city}
-          state={this.state.brewery.state}
-          phone={this.state.brewery.phone}
-          website={this.state.brewery.website}
-          logo={this.state.brewery.logo}
+          brewery={this.state.brewery}
         />
       </div>
     )

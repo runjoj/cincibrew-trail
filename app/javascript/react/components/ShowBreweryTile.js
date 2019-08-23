@@ -2,14 +2,19 @@ import React from 'react'
 
 const ShowBreweryTile = props => {
 
+  let logo;
+  if (props.brewery.logo) {
+    logo = props.brewery.logo.url
+  }
+
   return(
     <div>
       <div>
-        <img src={props.logo.url} alt="brewery logo" width="200" height="200"/>
-        <h6>{props.name}</h6>
-        <h6>{props.address} {props.city}, {props.state}</h6>
-        <h6>{props.phone}</h6>
-        <h6>{props.website}</h6>
+        <img src={logo} alt="brewery logo" width="200" height="200"/>
+        <h6>{props.brewery.name}</h6>
+        <h6>{props.brewery.address} {props.brewery.city}, {props.brewery.state}</h6>
+        <h6>{props.brewery.phone}</h6>
+        <h6>{props.brewery.website}</h6>
       </div>
     </div>
   )

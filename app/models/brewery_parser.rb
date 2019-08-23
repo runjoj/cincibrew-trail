@@ -7,9 +7,7 @@ class BreweryParser
   end
 
   def index
-    binding.pry
     response = HTTParty.get("https://sandbox-api.brewerydb.com/v2/search/geo/point?lat=39.1482331&lng=-84.443718/25?key=#{DB_KEY}")
-    binding.pry
     response["results"].each do |brewery|
       Brewery.create(
         name: brewery["name"],

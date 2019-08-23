@@ -8,7 +8,7 @@ const BreweryTile = props => {
       <div>
         <Link to={`/breweries/${props.id}`}>
           <div className="brewery-logo">
-            <img src={props.image} alt="brewery logo" width="250" height="250"/>
+            <img src={props.image} alt="brewery logo"/>
             <div className="brewery-name">
               <p>{props.name}</p>
             </div>

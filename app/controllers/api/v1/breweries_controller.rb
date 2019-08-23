@@ -5,4 +5,9 @@ class Api::V1::BreweriesController < ApplicationController
     render json: Brewery.all
   end
 
+  def show
+    brewery = Brewery.find(params[:id])
+    render json: brewery
+  end
+
 end

@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Router, Switch } from 'react-router-dom'
 import BreweriesContainer from '../containers/BreweriesContainer'
+import ShowBreweryContainer from '../containers/ShowBreweryContainer'
 
 const App = (props) => {
   return (

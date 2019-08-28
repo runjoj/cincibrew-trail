@@ -1,0 +1,26 @@
+.brewery-list {
+  text-align: center;
+  display: inline-block;
+
+  .brewery-tile {
+    text-align: center;
+    padding: auto;
+    position: relative;
+
+    .brewery-tile-contents {
+      display: inline-block;
+      text-align: center;
+      width: auto;
+      height: auto;
+      position: relative;
+
+      img {
+        display: inline-block;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -56,6 +56,7 @@ gem 'shoulda-matchers', group: [:development, :test], require: false
 gem 'devise'
 gem 'carrierwave'
 gem 'httparty'
-gem 'foundation-rails', '~> 5.0'
 gem 'webpacker', '~> 3.3'
 gem 'bootstrap', '~> 4.3.1'
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'

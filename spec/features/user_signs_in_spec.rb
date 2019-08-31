@@ -1,3 +1,4 @@
+
 require 'rails_helper'
 
 feature 'user signs in', %Q{
@@ -5,8 +6,16 @@ feature 'user signs in', %Q{
   I want to sign in
   So that I can regain access to my account
 } do
+
+  let!(:user) {User.create!(
+    id: 1,
+    first_name: "Jose",
+    last_name: "Fine",
+    email: "jf@hotmail.com",
+    password: "welcome1"
+  )}
+
   scenario 'specify valid credentials' do
-    user = FactoryBot.create(:user)
 
     visit new_user_session_path
 

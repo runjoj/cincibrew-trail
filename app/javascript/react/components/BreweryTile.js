@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const BreweryTile = props => {
-  let location
 
   return(
       <div className="brewery-tile col-lg-3">

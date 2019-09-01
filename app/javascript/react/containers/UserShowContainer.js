@@ -1,13 +1,11 @@
 import React from 'react'
 import UserShowTile from '../components/UserShowTile'
 
-class UserShowContainer extends Component {
+class UserShowContainer extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      user: {
-        profile_photo: {}
-      }
+      user: {}
     }
   }
 
@@ -25,7 +23,7 @@ class UserShowContainer extends Component {
     })
     .then(response => response.json())
     .then(userObject => {
-      this.setState( {user: userObject.user } )
+      this.setState( {user: userObject } )
     })
     .catch(error => console.error(error.message))
   }

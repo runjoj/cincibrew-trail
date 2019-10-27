@@ -9,7 +9,8 @@ const UserShowTile = props => {
   return(
     <div>
       <img src={photo} alt="profile photo" height="200"/>
-      <h1>{props.user.first_name} {props.user.last_name}</h1>
+      <h2>{props.user.first_name} {props.user.last_name}</h2>
+      <h4>Breweries you have visited:</h4>
     </div>
   )
 }
